@@ -1,0 +1,559 @@
+* {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+img {
+	display: block;
+	margin: 0 auto;
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+body {
+	background-color: #202020;
+}
+
+.inner {
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.bar {
+	margin-top: 50px;
+	width: 90%;
+	border: 1px solid #ddd;
+}
+
+.stick {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.stick__line {
+		width: 1px;
+		height: 100px;
+		background-color: #feb961;
+		box-shadow: 0px 0px 10px 1px #feb961;
+		margin-bottom: 20px;
+	}
+
+	.stick__txt {
+		font: 16px/1 "Spectral", "Gowun Dodum";
+		color: #feb961;
+		letter-spacing: 1.5px;
+	}
+}
+
+.section01,
+.section02,
+.section03,
+.section04,
+.section05,
+.footer {
+	width: 100%;
+}
+
+.wrap {
+	width: 1180px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 auto;
+	//border: 1px solid #ddd;
+
+	.wrap__img {
+		//background-image: url(../img/23.jpg);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: bottom;
+
+		.section01 {
+			width: 100%;
+			margin-top: 30px;
+			margin-bottom: 130px;
+
+			.inner {
+				> a {
+					> img {
+						width: 20%;
+					}
+				}
+			}
+		}
+
+		.section02 {
+			margin-bottom: 170px;
+
+			.inner {
+				.section02__txt {
+					width: fit-content;
+					margin: 0 auto;
+					display: flex;
+					flex-direction: column;
+					text-align: center;
+					align-items: flex-end;
+
+					h2 {
+						font: bold 60px/1 "Spectral";
+						color: #fff;
+						margin-bottom: 20px;
+					}
+
+					h3 {
+						font: normal 30px/1 "Spectral";
+						color: #feb961;
+					}
+				}
+			}
+		}
+
+		.section03 {
+			.inner {
+				img {
+					width: 50%;
+					height: 100%;
+				}
+			}
+		}
+	}
+
+	.section04 {
+		margin-top: 100px;
+		background-color: #333;
+		padding: 70px 0px;
+
+		.inner {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			.section04__txt {
+				width: fit-content;
+				margin: 0 auto;
+				margin-bottom: 70px;
+
+				span {
+					font: normal 60px/1.4 "Spectral";
+					color: #feb961;
+				}
+
+				.span2 {
+					font-size: 50px;
+					color: #fff;
+				}
+			}
+
+			// p {
+			// 	margin-top: 50px;
+			// 	text-align: center;
+			// 	font: normal 25px/1.5 "Spectral", "Gowun Dodum";
+			// 	color: #fff;
+			// }
+
+			.section04__logo {
+				width: fit-content;
+				margin: 0 auto;
+				margin-top: 70px;
+				margin-bottom: 100px;
+				display: flex;
+				gap: 50px;
+				justify-content: space-b;
+				align-items: center;
+
+				> img {
+					width: 150px;
+					height: 50px;
+				}
+			}
+		}
+	}
+
+	.section05 {
+		.inner {
+			.map {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				margin-bottom: 100px;
+
+				.map__txt {
+					color: #fff;
+					font: 20px/2 "Spectral", "Gowun Dodum";
+					letter-spacing: 1px;
+					margin-top: 50px;
+				}
+
+				img {
+					margin-top: 50px;
+					width: 50%;
+				}
+			}
+		}
+	}
+
+	.section06 {
+		background-color: #333;
+		//border: 1px solid red;
+		width: 1180px;
+
+		.inner {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			.profile {
+				margin-top: 70px;
+				width: 100%;
+				margin-bottom: 70px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+
+				.no1 {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					margin-bottom: 100px;
+
+					img {
+						width: 250px;
+						height: 350px;
+						margin-right: 30px;
+					}
+
+					span {
+						color: #fff;
+						font: normal 13px/30px "Gowun Dodum";
+
+						.no1_ul {
+							width: 100%;
+
+							h4 {
+								font: bold 30px/1 "Gowun Dodum";
+								margin-bottom: 20px;
+							}
+						}
+					}
+				}
+
+				.line {
+					width: 90%;
+					height: 1px;
+					background-color: #9c9c9c;
+					margin: 0 auto;
+					margin-bottom: 100px;
+				}
+
+				.no2 {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+
+					img {
+						width: 250px;
+						height: 350px;
+						margin-right: 30px;
+					}
+
+					span {
+						color: #fff;
+						font: normal 13px/25px "Gowun Dodum";
+
+						.no2_ul {
+							//border: 1px solid cornflowerblue;
+							width: 100%;
+
+							h4 {
+								font: bold 30px/1 "Gowun Dodum";
+								margin-bottom: 20px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.section07 {
+		.inner {
+			.program {
+				//border: 1px solid cornflowerblue;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				width: 1180px;
+				color: #fff;
+				gap: 70px;
+				margin-top: 100px;
+				padding-bottom: 100px;
+
+				.first {
+					display: flex;
+					justify-content: space-between;
+					//border: 1px solid yellow;
+					width: 100%;
+					gap: 30px;
+
+					.artist_name {
+						font-family: "Spectral", serif;
+						font-size: 18px;
+						width: 50%;
+						//border: 1px solid red;
+						text-align: center;
+						padding: 5px;
+
+						> span {
+							font: normal 12px/1 "Spectral", serif;
+							text-align: left;
+						}
+					}
+
+					.title_music {
+						font: 500 17px/1 "Spectral", serif;
+						width: 50%;
+						//border: 1px solid orange;
+						text-align: left;
+
+						ul {
+							margin-top: 20px;
+							text-align: left;
+
+							li {
+								font: 500 14px/2 "Spectral", serif;
+								text-align: left;
+							}
+						}
+					}
+				}
+
+				.second {
+					display: flex;
+					justify-content: space-between;
+					//border: 1px solid yellow;
+					width: 100%;
+					gap: 30px;
+
+					.artist_name {
+						font-family: "Spectral", serif;
+						font-size: 18px;
+						width: 50%;
+						//border: 1px solid red;
+						text-align: center;
+						padding: 5px;
+
+						> span {
+							font: normal 12px/1 "Spectral", serif;
+							text-align: left;
+						}
+					}
+
+					.title_music {
+						font: 500 17px/1.5 "Spectral", serif;
+						width: 50%;
+						//border: 1px solid orange;
+						text-align: left;
+
+						ul {
+							margin-top: 20px;
+							text-align: left;
+
+							li {
+								font: 500 14px/2 "Spectral", serif;
+								text-align: left;
+							}
+						}
+					}
+				}
+
+				.third {
+					display: flex;
+					justify-content: space-between;
+					//border: 1px solid yellow;
+					width: 100%;
+					gap: 30px;
+
+					.artist_name {
+						font-family: "Spectral", serif;
+						font-size: 18px;
+						width: 50%;
+						//border: 1px solid red;
+						text-align: center;
+						padding: 5px;
+
+						> span {
+							font: normal 12px/1 "Spectral", serif;
+							text-align: left;
+						}
+					}
+
+					.title_music {
+						font: 500 17px/1.5 "Spectral", serif;
+						width: 50%;
+						//border: 1px solid orange;
+						text-align: left;
+
+						ul {
+							margin-top: 20px;
+							text-align: left;
+
+							li {
+								font: 500 14px/2 "Spectral", serif;
+								text-align: left;
+							}
+						}
+					}
+				}
+
+				.intermission {
+					margin: 0 auto;
+					font: 18px/1 "Spectral", serif;
+					letter-spacing: 7px;
+					color: #777;
+					margin-top: 20px;
+					margin-bottom: 20px;
+				}
+
+				.fourth {
+					display: flex;
+					justify-content: space-between;
+					//border: 1px solid yellow;
+					width: 100%;
+					gap: 30px;
+
+					.artist_name {
+						font-family: "Spectral", serif;
+						font-size: 18px;
+						width: 50%;
+						//border: 1px solid red;
+						text-align: center;
+						padding: 5px;
+
+						> span {
+							font: normal 12px/1 "Spectral", serif;
+							text-align: left;
+						}
+					}
+
+					.title_music {
+						font: 500 17px/1.5 "Spectral", serif;
+						width: 50%;
+						//border: 1px solid orange;
+						text-align: left;
+
+						ul {
+							margin-top: 20px;
+							text-align: left;
+
+							li {
+								font: 500 14px/2 "Spectral", serif;
+								text-align: left;
+							}
+						}
+					}
+				}
+
+				.fifth {
+					display: flex;
+					justify-content: space-between;
+					//border: 1px solid yellow;
+					width: 100%;
+					gap: 30px;
+
+					.artist_name {
+						font-family: "Spectral", serif;
+						font-size: 18px;
+						width: 50%;
+						//border: 1px solid red;
+						text-align: center;
+						padding: 5px;
+
+						> span {
+							font: normal 12px/1 "Spectral", serif;
+							text-align: left;
+						}
+					}
+
+					.title_music {
+						font: 500 17px/1.5 "Spectral", serif;
+						width: 50%;
+						//border: 1px solid orange;
+						text-align: left;
+
+						ul {
+							margin-top: 20px;
+							text-align: left;
+
+							li {
+								font: 500 14px/2 "Spectral", serif;
+								text-align: left;
+							}
+						}
+					}
+				}
+
+				.sixth {
+					display: flex;
+					justify-content: space-between;
+					//border: 1px solid yellow;
+					width: 100%;
+					gap: 30px;
+
+					.artist_name {
+						font-family: "Spectral", serif;
+						font-size: 18px;
+						width: 50%;
+						//border: 1px solid red;
+						text-align: center;
+						padding: 5px;
+
+						> span {
+							font: normal 12px/1 "Spectral", serif;
+							text-align: left;
+						}
+					}
+
+					.title_music {
+						font: 500 17px/1.5 "Spectral", serif;
+						width: 50%;
+						//border: 1px solid orange;
+						text-align: left;
+
+						ul {
+							margin-top: 20px;
+							text-align: left;
+
+							li {
+								font: 500 14px/2 "Spectral", serif;
+								text-align: left;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.footer {
+		.inner {
+			.footer__txt {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				font: 16px/1.5 "Spectral";
+				padding: 30px 0px;
+				color: #fff;
+			}
+		}
+	}
+}
